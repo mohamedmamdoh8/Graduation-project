@@ -10,11 +10,11 @@ Lane Keeping Assist System (LKAS): Steers the vehicle back into the lane if it d
 Lane Collision Warning (LCW): Alerts the driver if the vehicle is at risk of leaving its lane.
 Automatic Emergency Braking (AEB): Detects obstacles in front and applies the brakes if necessary to prevent collisions.
 Speed Control Based on Distance: Automatically adjusts the vehicle’s speed depending on the proximity to other vehicles or obstacles.
-Pin Configuration
+## **Pin Configuration**
 TRIG_PIN: GPIO_PIN_9 (for triggering the ultrasonic sensor)
 ECHO_PIN: GPIO_PIN_8 (for receiving the echo from the ultrasonic sensor)
-Constants
-Speed Constants
+## **Constants**
+### **Speed Constants**
 Stop_Distance: 15 cm
 Low_Distance: 30 cm
 Medium_Distance: 40 cm
@@ -29,7 +29,7 @@ VeryHighSpeed: 400
 TSpeed: 300
 RLSpeed: 350
 LimitSpeed: 300
-Control Constants
+### **Control Constants**
 TURN_ON_AUTOPILOT ('O')
 TURN_OFF_AUTOPILOT ('o')
 TURN_ON_ACC ('D')
