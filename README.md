@@ -10,11 +10,13 @@ Lane Keeping Assist System (LKAS): Steers the vehicle back into the lane if it d
 Lane Collision Warning (LCW): Alerts the driver if the vehicle is at risk of leaving its lane.
 Automatic Emergency Braking (AEB): Detects obstacles in front and applies the brakes if necessary to prevent collisions.
 Speed Control Based on Distance: Automatically adjusts the vehicle’s speed depending on the proximity to other vehicles or obstacles.
+
 ## **Pin Configuration**
 TRIG_PIN: GPIO_PIN_9 (for triggering the ultrasonic sensor)
 ECHO_PIN: GPIO_PIN_8 (for receiving the echo from the ultrasonic sensor)
+
 ## **Constants**
-# Speed Constants
+### Speed Constants
 1- Stop_Distance: 15 cm
 2- Low_Distance: 30 cm
 3- Medium_Distance: 40 cm
@@ -29,7 +31,7 @@ ECHO_PIN: GPIO_PIN_8 (for receiving the echo from the ultrasonic sensor)
 12- TSpeed: 300
 12- RLSpeed: 350
 12- LimitSpeed: 300
-# Control Constants
+### Control Constants
 - TURN_ON_AUTOPILOT ('O')
 - TURN_OFF_AUTOPILOT ('o')
 - TURN_ON_ACC ('D')
@@ -42,11 +44,11 @@ ECHO_PIN: GPIO_PIN_8 (for receiving the echo from the ultrasonic sensor)
 - TURN_OFF_LCW ('c')
 
 ## **Key Functions**
-# Speed Control
+### Speed Control
 - Car_vSpeed(uint16_t Distance): Adjusts the vehicle's speed based on the distance measured by the ultrasonic sensor.
 - Car_vFroward(), Car_vStop(), Car_vReverse(), Car_vTRight(), Car_vTLeft(): Functions to control the vehicle's movement in different directions (forward, reverse, turning left or right).
 
-## **Movement Control**
+### **Movement Control**
 - Move_vForward(), Move_vReverse(): Move the vehicle forward or reverse with the designated speed.
 - Move_vRight(), Move_vLeft(): Move the vehicle to the right or left.
 - Move_vRF(), Move_vLF(): Move the vehicle forward at a right or left angle.
